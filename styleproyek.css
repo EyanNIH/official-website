@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+
+/* HEADER */
+header {
+    background-color:black;
+    height: 50px;
+    width: 100%;
+    display: flexbox;
+    /* membuat elemen yang ada didalamnya menjadi sejajar kesamping dengan rapih dan bisa beradaptasi dengan keadaan */
+    position: fixed;
+    /* membuat elemen mengambang diatas elemen lain, nilai fixed akan berada ditempatnya walaupun layar discroll */
+    justify-content: space-between;
+    /* berfungsi mengontrol item didalamnya */
+}
+
+header h1 {
+    padding: 15px;
+    float: left;
+    /* float=mengapung */
+    font-size: large;
+    /* large = besar */
+    word-spacing: -4px;
+    font-family: cursive;
+    color: rgb(235, 130, 11);
+}
+
+a{
+    text-decoration: none;
+}
+
+.container ul {
+    padding: 15px;
+    float: right;
+}
+
+.container ul li {
+    font-size: 16px;
+    display: inline-flex;
+    color: white;
+    padding-right: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* hover= ketika link d tunjuk */
+.container ul li:hover {
+    color: rgb(255, 213, 166);
+}
+
+.mobile-menu{
+    float: right;
+    display: none;
+    padding: 10px 15px 0px 0px;
+    color: whitesmoke;
+}
+
+.mobile-menu :hover{
+    cursor: pointer;
+}
+
+#check{
+    display: none;
+}
+
+.sidebar{
+    position: fixed;
+    top: 50px;
+    bottom: 0px;
+    left: -250px;
+    padding-top: 30px;
+    background-color: rgba(255, 157, 70, .8);
+    transition: 0.3s;
+}
+
+.sidebar ul li{
+    padding: 20px 70px 20px 80px;
+    display: block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar ul li a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(102, 99, 99);
+}
+
+.sidebar ul li:hover{
+    background-color: black;
+}
+
+#check:checked ~ .sidebar{
+    left: 0px;
+}
+
+@media (max-width: 768px){
+    .mobile-menu{
+        display: block;
+    }
+    .container ul{
+        display: none;
+    }
+}
+
+/* KONTEN1 */
+#konten1 {
+    padding: 300px 0px 80px 0px;
+    background-image: url(backonten1.jpg);
+    margin-bottom: 5px;
+}
+
+#konten1 h1 {
+    text-align: center;
+    color: rgb(235, 130, 11);
+    margin-bottom: 10px;
+    font-size: 60px;
+}
+
+#konten1 p {
+    margin-bottom: 250px;
+    text-align: center;
+    font-size: 14.5px;
+}
+
+/* ABOUT ME */
+#aboutme {
+    padding: 100px 0px 150px 0px;
+    background: linear-gradient(rgb(41, 41, 41), rgb(66, 66, 66));
+    text-align: center;
+
+}
+
+#aboutme h1 {
+    margin-bottom: 40px;
+    color: rgb(235, 130, 11);
+    text-decoration: underline rgb(151, 151, 151);
+}
+
+.gambarme {
+    border-radius: 1000px;
+}
+
+.komen1 {
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.komen2 {
+    font-size: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#aboutme p {
+    color: white;
+    word-spacing: normal;
+    margin: 50px 100px;
+    padding: 30px;
+    border-style: inset;
+    text-align: justify;
+    /* agar paragrafnya rata kiri kanan */
+}
+
+
+/* PORTOFOLIO */
+#portofolio {
+    padding: 100px 0px 60px 0px;
+    background: linear-gradient(rgb(66, 66, 66), rgb(89, 89, 89));
+}
+
+#portofolio h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgb(235, 130, 11);
+    text-decoration: underline rgb(151, 151, 151);
+}
+
+.gambarporto {
+    text-align: center;
+    justify-content: space-between;
+}
+
+.gambarporto img {
+    padding: 50px;
+}
+
+/* BLOG */
+#blog {
+    padding: 100px 0px 150px 0px;
+    background: linear-gradient(rgb(89, 89, 89), rgb(120, 120, 120));
+    color: white;
+}
+
+#blog h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(235, 130, 11);
+    text-decoration: underline rgb(151, 151, 151);
+}
+
+.listblog {
+    display: flex;
+    width: 1000px;
+    margin: auto;
+}
+
+.gblog {
+    border-radius: 80px;
+}
+
+/* RADIT */
+.radit {
+    text-align: justify;
+    padding: 30px;
+}
+
+.radit h2 {
+    color: rgb(235, 130, 11);
+}
+
+.radit a {
+    color: rgb(224, 153, 0);
+}
+
+.radit a:hover {
+    color: rgb(255, 206, 149);
+}
+
+.radit a:active {
+    color: grey;
+}
+
+/* AGUS */
+.agus {
+    text-align: justify;
+    padding: 30px;
+}
+
+.agus h2 {
+    color: rgb(235, 130, 11);
+}
+
+.agus a {
+    color: rgb(224, 153, 0);
+}
+
+.agus a:hover {
+    color: rgb(255, 206, 149);
+}
+
+.agus a:active {
+    color: grey;
+}
+
+/* SUGENG */
+.sugeng {
+    text-align: justify;
+    padding: 30px;
+}
+
+.sugeng h2 {
+    color: rgb(235, 130, 11);
+}
+
+.sugeng a {
+    color: rgb(224, 153, 0);
+}
+
+.sugeng a:hover {
+    color: rgb(255, 206, 149);
+}
+
+.sugeng a:active {
+    color: grey;
+}
+
+
+/* KONTAK */
+#hubungi {
+    padding: 100px 0px 30px 0px;
+    background: linear-gradient(rgb(120, 120, 120), white);
+    text-align: center;
+}
+
+#hubungi h1 {
+    margin-bottom: 10px;
+    color: rgb(235, 130, 11);
+    text-decoration: underline rgb(151, 151, 151);
+}
+
+#hubungi p {
+    margin-bottom: 80px;
+}
+
+.email {
+    border-radius: 50px;
+}
+
+.nomor {
+    border-radius: 50px;
+}
+
+.alamat {
+    border-radius: 50px;
+}
+
+footer {
+    background-color: black;
+    padding: 10px;
+}
+
+footer h2 {
+    color: rgb(235, 130, 11);
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
